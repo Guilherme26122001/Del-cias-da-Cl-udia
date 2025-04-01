@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias da Cláudia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Delícias da Cláudia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Bem-vindo ao nosso site!</h2>
+            <p>.</p>
+            <section class="galeria">
+                <div class="linha">
+                    <img src="img/foto dos bolos.jpeg" alt="Bolos" class="img-click" onclick="abrirImagem(this)">
+                    <img src="img/foto dos salgados.jpg" alt="Salgados" class="img-click" onclick="abrirImagem(this)">
+                </div>
+                <div class="linha">
+                    <img src="img/foto das pizzas.jpeg" alt="Pizzas" class="img-click" onclick="abrirImagem(this)">
+                    <img src="img/foto dos docinhos.jpeg" alt="Docinhos" class="img-click" onclick="abrirImagem(this)">
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Delícias da Cláudia </p>
+    </footer>
+
+    <!-- Lightbox para tela cheia -->
+    <div id="lightbox" class="lightbox" onclick="fecharImagem()">
+        <img id="imagemGrande" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
